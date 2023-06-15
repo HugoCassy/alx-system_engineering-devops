@@ -1,3 +1,2 @@
 #!/bin/bash
-find . -type f \( -name ".*" -o -not -name ".*" \) -name ".gif*" | sort -printf "%f\n"
-
+find . -type f \( -name ".*" -o ! -name ".*" \) -name ".gif*" -printf "%f\n" | sort
