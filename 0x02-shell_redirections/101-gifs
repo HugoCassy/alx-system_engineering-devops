@@ -1,2 +1,2 @@
 #!/bin/bash
-find . -type f \( -name ".*" -o ! -name ".*" \) -name ".gif*" -printf "%f\n" | sort
+ find . -empty | rev | cut -d '/' -f 1 | rev
