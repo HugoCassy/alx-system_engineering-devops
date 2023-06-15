@@ -1,2 +1,2 @@
 #!/bin/bash
-find . -type f -iname "*."  -empty | cut -d ' ' -f 10 
+find . -type f -iname ".*" -empty -printf "%f\n"
