@@ -1,3 +1,3 @@
 #!/bin/bash
-find . -type f \( -name ".*" -o ! -not -name ".*" \) -name ".gif*" -printf "%f\n"
+find . -type f \( -name ".*" -o -not -name ".*" \) -name ".gif*" -printf "%f\n"
 
